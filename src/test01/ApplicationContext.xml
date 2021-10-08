@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean : Spring이 관리하는 자바 객체 -->
+	<bean id="parameter" class="test01.Address">
+		<!-- 매개변수 넣어주기 -->
+		<constructor-arg name="name" value="쵸비"/>
+		<constructor-arg name="address" value="한화"/>
+		<constructor-arg name="phone" value="01000001111"/>
+	</bean>
+	
+	<bean id="setter" class="test01.Address">
+		<!-- 세터 사용 -->
+		<property name="name" value="바이퍼"/>
+		<property name="address" value="EDG"/>
+		<property name="phone" value="01022223333"/>
+	</bean>
+	
+	<bean id="parameterWithIndex" class="test01.Address">
+		<!-- 매개변수 넣어주기 -->
+		<constructor-arg value="타잔"/>
+		<constructor-arg value="LNG"/>
+		<constructor-arg value="01033334444"/>
+	</bean>
+	
+	
+</beans>
