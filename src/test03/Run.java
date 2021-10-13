@@ -11,7 +11,7 @@ public class Run {
 		// main에서 찍어보기 toString메서드를 출력해주세용
 		// bean의 아이디는 date임.
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("test03/ApplicationContext.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("test03/applicationContext.xml");
 		/*
 		 * String day = context.getBean("dateBean").toString(); String score =
 		 * context.getBean("scoreBean").toString(); String beanTest =

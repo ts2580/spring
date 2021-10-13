@@ -8,7 +8,7 @@ public class Run {
 	public static void main(String[] args) {
 
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("test01/ApplicationContext.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("test01/applicationContext.xml");
 		// 스프링이 관리하는 bean에 인스턴스가 올라감! 여기까지만 쓰고 실행해도!
 		
 		Address adr = (Address) context.getBean("parameter");
